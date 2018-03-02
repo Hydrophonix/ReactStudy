@@ -1,0 +1,43 @@
+body {
+  background-color: lightgrey;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1200px;
+  height: 100vh;
+  background-color: white;
+}
+
+header, main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  border: 3px solid black;
+  background-color: #cee1ff;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 3px 10px;
+  border: 1px solid black;
+}
+
+span {
+  display: inline-block;
+  cursor: pointer;
+  color: grey;
+}
+
+.active {
+  color: red;
+}
+
+.down {
+   transform: rotate(180deg);
+}
