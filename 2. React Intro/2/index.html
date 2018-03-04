@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Article</title>
+
+    <script src="https://npmcdn.com/react@15.4.0/dist/react.js"></script>
+    <script src="https://npmcdn.com/react-dom@15.4.0/dist/react-dom.js"></script>
+    <script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+    <style media="screen">
+      .likes { color: red }
+      .tweets { color: grey }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+    const ArticleComponent = React.createClass({
+        render() {
+            return (
+                <div>
+                    <h1>{this.props.name}</h1>
+                    <h2>By {this.props.author}</h2>
+                    <p>{this.props.text}</p>
+                    <div>
+                      <div><span className="likes">♥</span>{this.props.likes}</div>
+                      <div><span className="tweets">▤</span>{this.props.tweets}</div>
+                    </div>
+                </div>
+            )
+        }
+    });
+    ReactDOM.render(
+        <ArticleComponent name="About Rabbits" author="Calvin Harri" text="Big Rabbits love to jump" likes="23" tweets="34" />,
+        document.getElementById('root')
+    );
+    </script>
+</body>
+</html>

@@ -77,8 +77,10 @@ function renderTable(arr, search) {
     e.target.classList.add('down');
     sorting(e.target.getAttribute('data-type'), false);
   }
-  Array.from(document.getElementsByTagName('span')).forEach(item => item.classList.remove('active'));
-  e.target.classList.add('active');;
+  if (!e.target.classList.contains('active')) {
+    Array.from(document.getElementsByTagName('span')).forEach(item => item.classList.remove('active'));
+    e.target.classList.add('active');
+  }
   tBody();
 });
 }
