@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: 300;
+    background-color: #eaeaea;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.note {
+    position: relative;
+    width: 240px;
+    height: auto;
+    float: left;
+    background-color: yellow;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: box-shadow .3s;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+    .note:hover {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+
+    .note__delete-icon {
+        position: absolute;
+        top:5px;
+        right:5px;
+        display: none;
+        color: rgba(0,0,0,0.6);
+        cursor: pointer;
+    }
+
+    .note:hover .note__delete-icon {
+        display: block;
+    }
+
+.editor {
+    width: 100%;
+    max-width: 600px;
+    padding: 16px;
+    margin: 16px auto;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+    .editor__textarea {
+        width: 100%;
+        resize: none;
+        margin: 5px;
+        font-size: 14px;
+        border: none;
+        font-weight: 300;
+    }
+
+    .editor__textarea:focus {
+        outline: 0;
+    }
+
+    .editor__button {
+        width: 100px;
+        background-color:#44c767;
+        border-radius:28px;
+        border:1px solid #18ab29;
+        cursor:pointer;
+        color:#ffffff;
+        font-size:14px;
+        padding:8px 8px;
+        text-transform: uppercase;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #2f6627;
+    }
+
+    .editor__button:hover {
+        background-color:#5cbf2a;
+    }
+
+    .editor__button:active {
+        position:relative;
+        top:1px;
+    }
+
+    .editor__button:focus {
+        outline: 0;
+    }
+
+    .editor__control-box {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .editor__colors-box {
+      display: flex;
+      align-items: center;
+    }
+
+    .editor__colors-box > div {
+      margin-right: 10px;
+      width: 25px;
+      height: 25px;
+      border-radius: 25px;
+      background-color: black;
+      transition: width .5s, height .5s;
+    }
+
+    .editor__colors-box > .active {
+      width: 35px;
+      height: 35px;
+      transition: width .5s, height .5s;
+    }
+
+.grid {
+    margin: 0 auto;
+}
+
+.app {
+    max-width: 960px;
+    width: 100%;
+}
+
+    .app__header {
+        font-family: 'Galada', cursive;
+        font-size: 30px;
+        text-align: center;
+        font-weight: 500;
+        color: black;
+        text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+}

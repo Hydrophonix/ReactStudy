@@ -1,0 +1,11 @@
+#root {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.person {
+  border: 2px solid grey;
+  height: 200px;
+  width: 600px;
+  margin-bottom: 10px;
+}

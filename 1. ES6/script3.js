@@ -28,7 +28,7 @@ function renderTable(arr, search) {
   const data = arr;
 
   function sorting(type, state) {
-    data.sort((a, b) => state? a[type] > b[type] : a[type] < b[type])
+    data.sort((a, b) => !(state ^ a[type] > b[type]) ? 1 : -1)
   }
 
   function tBody() {
