@@ -1,0 +1,23 @@
+#root {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3f51b5;
+  color: #fff;
+}
+
+.footer p,
+.footer span {
+  margin: 0;
+  padding: 10px;
+}
