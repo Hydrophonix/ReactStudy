@@ -1,0 +1,106 @@
+{
+  "extends": ["react-app", "plugin:jsx-a11y/recommended"],
+  "plugins": ["jsx-a11y"],
+  "globals": {
+    "document": true,
+    "console": true,
+    "localStorage": true,
+    "window": true,
+    "setTimeout": true,
+    "clearTimeout": true,
+    "ga": true,
+    "store": true,
+  },
+  "rules": {
+
+    #Style
+    "indent": [2, 4],
+    "brace-style": [2,
+      "1tbs", {
+      "allowSingleLine": true
+    }],
+    "quotes": [
+      2, "single", "avoid-escape"
+    ],
+    "camelcase": [2, {
+      "properties": "never"
+    }],
+    "comma-spacing": [2, {
+      "before": false,
+      "after": true
+    }],
+    "comma-style": [2, "last"],
+    "object-curly-spacing": ["error", "always"],
+    "array-bracket-spacing": ["error", "always"],
+    "newline-after-var": 2,
+    "eol-last": 2,
+    "func-names": 1,
+    "key-spacing": [2, {
+        "beforeColon": false,
+        "afterColon": true
+    }],
+    "new-cap": [2, {
+      "newIsCap": true,
+      "capIsNew": false
+    }],
+    "no-multiple-empty-lines": [2, {
+      "max": 2
+    }],
+    "no-nested-ternary": 2,
+    "no-new-object": 2,
+    "no-spaced-func": 2,
+    "no-trailing-spaces": 2,
+    "no-extra-parens": [2, "functions"],
+    "no-underscore-dangle": 0,
+    "padded-blocks": [2, "never"],
+    "semi": [2, "always"],
+    "semi-spacing": [2, {
+      "before": false,
+      "after": true
+    }],
+    "keyword-spacing": 2,
+    "space-before-blocks": 2,
+    "space-before-function-paren": [2, "never"],
+    "space-infix-ops": 2,
+    "spaced-comment": 2,
+
+    "no-console": 1,
+
+    #JSX style
+    "react/display-name": 0,
+    "react/jsx-boolean-value": 2,
+    "jsx-quotes": [2, "prefer-double"],
+    "react/jsx-no-undef": 2,
+    "react/jsx-sort-props": 0,
+    "react/jsx-sort-prop-types": 0,
+    "react/jsx-uses-react": 2,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "react/no-did-mount-set-state": 2,
+    "react/no-did-update-set-state": 2,
+    "react/no-multi-comp": [2, { "ignoreStateless": true }],
+    "react/no-unknown-property": 2,
+    "react/prop-types": 2,
+    "react/react-in-jsx-scope": 2,
+    "react/self-closing-comp": 2,
+    "react/jsx-wrap-multilines": ["error", {
+      "declaration": true,
+      "assignment": true,
+      "return": true,
+      "arrow": true
+    }],
+
+    "react/sort-comp": [2, {
+      "order": [
+         "constructor",
+          "static-methods",
+          "lifecycle",
+          "/^on.+$/",
+          "/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/",
+          "everything-else",
+          "/^render.+$/",
+          "render"
+      ],
+    }]
+  }
+}
