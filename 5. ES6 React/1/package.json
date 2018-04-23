@@ -1,0 +1,39 @@
+{
+  "name": "group",
+  "version": "1.0.0",
+  "description": "webpack build",
+  "main": "index.jsx",
+  "scripts": {
+    "start": "cross-env NODE_ENV='development' webpack-dev-server --content-base public --debug --hot --output-pathinfo --watch --inline --port 3000",
+    "build": "cross-env NODE_ENV='production' webpack -p"
+  },
+  "author": "Hydrophonix",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-hot-loader": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "cross-env": "^5.1.4",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "eslint-config-react-app": "^2.1.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-flowtype": "^2.46.1",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "prop-types": "^15.6.1",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1"
+  }
+}
