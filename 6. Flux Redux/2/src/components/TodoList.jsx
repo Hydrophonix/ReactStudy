@@ -34,7 +34,7 @@ export default class extends Component {
 
     return(
       <div className="base">
-        {todos.filter(item => item).map(({ id, text, completed }) =>
+        {todos.map(({ id, text, completed }) =>
           <Todo
             key={id}
             id={id}
