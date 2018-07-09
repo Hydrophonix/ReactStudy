@@ -1,0 +1,7 @@
+export const ADD_TODO = 'ADD_TODO'
+export const TOGGLE_TODO = 'TOGGLE_TODO'
+export const DELETE_TODO = 'DELETE_TODO'
+export const SET_FILTER = 'SET_FILTER'
+export const DONE_ALL_TODOS = 'DONE_ALL_TODOS'
+export const SET_TODO_EXPIRED = 'SET_TODO_EXPIRED'
+export const CHANGE_TODO_TEXT = 'CHANGE_TODO_TEXT'
